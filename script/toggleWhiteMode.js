@@ -25,7 +25,7 @@ export const toggleWhiteMode = () => {
     localStorage.setItem("darkMode", false);
 
     // CHANGE: Set all background properties, not just the image
-    htmlElement.style.backgroundImage = "url('./images/bg-desktop-light.jpg')";
+    htmlElement.style.backgroundImage = "url('../images/bg-desktop-light.jpg')";
     htmlElement.style.backgroundSize = "cover";
     htmlElement.style.backgroundPosition = "center";
     htmlElement.style.backgroundRepeat = "no-repeat";
@@ -38,7 +38,7 @@ export const toggleWhiteMode = () => {
   } else {
     // Dark mode
     localStorage.setItem("darkMode", true);
-    htmlElement.style.backgroundImage = "url('./images/bg-desktop-dark.jpg')";
+    htmlElement.style.backgroundImage = "url('../images/bg-desktop-dark.jpg')";
     htmlElement.style.backgroundSize = "cover";
     htmlElement.style.backgroundPosition = "center top";
     htmlElement.style.backgroundRepeat = "no-repeat";
@@ -49,4 +49,5 @@ export const toggleWhiteMode = () => {
     mobileFilterElement.style.backgroundColor = "hsl(237, 14%, 26%)";
   }
 };
+
 
