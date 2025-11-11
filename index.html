@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+    />
+
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <main class="App">
+      <div class="App__wrapper">
+        <header class="App__header">
+          <h1 class="App__title">TODO</h1>
+          <button class="App__theme-toggle">
+            <img src="./images/icon-sun.svg" alt="Theme toggle" $ />
+          </button>
+        </header>
+
+        <!-- Input -->
+        <div class="App__input">
+          <button class="App__input-btn"></button
+          ><input
+            type="text"
+            class="App__input-field"
+            placeholder="Create a new todo..."
+            role="button"
+          />
+        </div>
+
+        <!-- Todo List -->
+        <ul class="App__list">
+          <!-- Controls -->
+          <div class="App__controls App__list-item">
+            <div>
+              <p class="App__count">
+                <span class="App__count-number">0</span> items left
+              </p>
+            </div>
+            <div class="App__filters">
+              <button class="App__filter App__filter--all">All</button>
+              <button class="App__filter App__filter--active">Active</button>
+              <button class="App__filter App__filter--completed">
+                Completed
+              </button>
+            </div>
+            <div class="App__actions">
+              <button class="App__action App__action--clear">
+                Clear Completed
+              </button>
+            </div>
+          </div>
+        </ul>
+
+        <div class="App__filters__mobile">
+          <button class="App__filter App__filter--all">All</button>
+          <button class="App__filter App__filter--active">Active</button>
+          <button class="App__filter App__filter--completed">Completed</button>
+        </div>
+
+        <!-- Footer -->
+        <div>
+          <footer class="App__footer">Drag and drop to reorder list</footer>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
